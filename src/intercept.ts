@@ -15,6 +15,8 @@ import * as Github from './sites/github';
 import * as LinkedIn from './sites/linkedin';
 import * as Instagram from './sites/instagram';
 import * as YouTube from './sites/youtube';
+import * as TradingView from './sites/tradingview';
+
 import { createStore, Store } from './store';
 
 const store = createStore();
@@ -37,6 +39,8 @@ export function eradicate(store: Store) {
 		Instagram.eradicate(store);
 	} else if (FbClassic.checkSite()) {
 		FbClassic.eradicate(store);
+	} else if (TradingView.checkSite()) {
+		TradingView.eradicate(store);
 	} else {
 		Fb2020.eradicate(store);
 	}

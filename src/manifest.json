@@ -24,7 +24,9 @@
 		"https://www.github.com/*",
 		"https://github.com/*",
 		"http://www.instagram.com/*",
-		"https://www.instagram.com/*"
+		"https://www.instagram.com/*",
+		"http://br.tradingview.com/*",
+		"https://br.tradingview.com/*"
 	],
 	"browser_action": {
 		"default_icon": {
